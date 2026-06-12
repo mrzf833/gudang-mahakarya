@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gudang Mahakarnya | Pembuatan Furniture Custom Premium</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Gudang Mahakarnya adalah workshop furniture custom premium. Kami melayani pembuatan kitchen set, meja makan solid wood, wardrobe, dan interior custom dengan pengerjaan presisi dan material terbaik.">
+  <meta name="keywords" content="furniture custom, kitchen set, wardrobe, meja makan jati, solid wood table, pengrajin furniture, kabinet kayu, interior custom, gudang mahakarnya">
+  
+  <!-- Tailwind CSS v4 Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-[#0b0f19] text-slate-100 antialiased bg-grid-pattern relative">
+
+  <!-- Glow Background Accents -->
+  <div class="fixed top-0 left-1/4 w-[500px] h-[500px] bg-amber-500/5 rounded-full filter blur-[120px] pointer-events-none -z-10 animate-pulse-glow"></div>
+  <div class="fixed bottom-0 right-1/4 w-[600px] h-[600px] bg-blue-500/3 rounded-full filter blur-[150px] pointer-events-none -z-10 animate-pulse-glow" style="animation-delay: 3s;"></div>
+
+  <!-- ==========================================================================
+     HEADER / NAVIGATION
+     ========================================================================== -->
+  <header class="fixed top-0 left-0 w-full z-40 transition-all duration-500 py-5 bg-transparent">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#beranda" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 bg-gradient-to-tr from-amber-600 to-amber-400 rounded-lg flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:rotate-6 transition-all duration-300">
+          <!-- Modern Furniture Icon (SVG) -->
+          <svg class="w-6 h-6 text-slate-950" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 9h16v6H4V9z M8 15v4 M16 15v4 M6 9V6a1 1 0 011-1h10a1 1 0 011 1v3" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-bold tracking-tight text-white group-hover:text-amber-400 transition-colors">GUDANG</span>
+          <span class="text-[9px] text-amber-500 tracking-[0.2em] font-semibold leading-none">MAHAKARNYA</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+        <a href="#beranda" class="hover:text-amber-400 transition-colors">Beranda</a>
+        <a href="#tentang" class="hover:text-amber-400 transition-colors">Tentang</a>
+        <a href="#layanan" class="hover:text-amber-400 transition-colors">Layanan</a>
+        <a href="#portofolio" class="hover:text-amber-400 transition-colors">Portofolio</a>
+        <a href="#alur-kerja" class="hover:text-amber-400 transition-colors">Alur Kerja</a>
+        <a href="#faq" class="hover:text-amber-400 transition-colors">FAQ</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a href="#kontak" class="glass-badge px-6 py-2.5 rounded-full text-xs font-bold tracking-wider hover:bg-amber-500 hover:text-slate-950 hover:border-amber-500 transition-all duration-300 shadow-lg shadow-amber-500/5">
+          KONSULTASI GRATIS
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none" aria-label="Toggle Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 w-full bg-[#0b0f19]/95 backdrop-blur-xl border-b border-slate-900 py-6 px-6 shadow-2xl flex flex-col gap-4">
+      <a href="#beranda" class="text-slate-300 font-semibold py-2 border-b border-slate-900 hover:text-amber-400">Beranda</a>
+      <a href="#tentang" class="text-slate-300 font-semibold py-2 border-b border-slate-900 hover:text-amber-400">Tentang</a>
+      <a href="#layanan" class="text-slate-300 font-semibold py-2 border-b border-slate-900 hover:text-amber-400">Layanan</a>
+      <a href="#portofolio" class="text-slate-300 font-semibold py-2 border-b border-slate-900 hover:text-amber-400">Portofolio</a>
+      <a href="#alur-kerja" class="text-slate-300 font-semibold py-2 border-b border-slate-900 hover:text-amber-400">Alur Kerja</a>
+      <a href="#faq" class="text-slate-300 font-semibold py-2 border-b border-slate-900 hover:text-amber-400">FAQ</a>
+      <a href="#kontak" class="w-full text-center bg-amber-500 text-slate-950 py-3 rounded-lg font-bold hover:bg-amber-400 transition-colors">
+        Konsultasi Gratis
+      </a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+     HERO SECTION
+     ========================================================================== -->
+  <section id="beranda" class="min-h-screen relative flex items-center pt-24 pb-16 overflow-hidden">
+    <!-- Image Backdrop -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/images/hero_furniture.png" alt="Custom Furniture Showroom" class="w-full h-full object-cover">
+      <!-- Dark Multi-Layered Gradient Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0b0f19] via-[#0b0f19]/90 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0b0f19] via-transparent to-[#0b0f19]/40"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full relative z-10 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-8 lg:col-span-7 flex flex-col gap-6">
+        <!-- Floating Badge with slide-in animation -->
+        <div class="inline-flex items-center gap-2 self-start glass-badge py-1.5 px-4 rounded-full text-xs font-semibold tracking-wider uppercase animate-pulse">
+          <span class="w-2.5 h-2.5 bg-amber-500 rounded-full"></span>
+          BENGKEL FURNITURE CUSTOM &amp; ARTISAN KAYU
+        </div>
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
+          Menghadirkan Mahakarya dengan <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-400">Keindahan &amp; Presisi</span>
+        </h1>
+
+        <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-xl">
+          Kami mewujudkan furniture custom impian Anda dengan material kayu pilihan, finishing premium, dan pengerjaan presisi oleh pengrajin ahli. Mewah, kokoh, dan tahan lama.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="flex flex-wrap gap-4 mt-2">
+          <a href="#kontak" class="bg-gradient-to-r from-amber-600 to-amber-500 text-slate-950 px-8 py-4 rounded-full font-bold shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 hover:scale-[1.03] transition-all duration-300">
+            Pesan Furniture Custom
+          </a>
+          <a href="#portofolio" class="border border-slate-700 bg-slate-900/40 backdrop-blur-md text-white px-8 py-4 rounded-full font-bold hover:bg-slate-800 hover:border-slate-500 transition-all duration-300">
+            Lihat Galeri Produk
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="grid grid-cols-3 gap-6 mt-8 pt-8 border-t border-slate-800/80">
+          <div>
+            <div class="text-2xl lg:text-3xl font-extrabold text-amber-500">100%</div>
+            <div class="text-[11px] text-slate-400 uppercase tracking-widest mt-1">Kayu Pilihan</div>
+          </div>
+          <div>
+            <div class="text-2xl lg:text-3xl font-extrabold text-amber-500">3 Tahun</div>
+            <div class="text-[11px] text-slate-400 uppercase tracking-widest mt-1">Garansi Konstruksi</div>
+          </div>
+          <div>
+            <div class="text-2xl lg:text-3xl font-extrabold text-amber-500">Finest</div>
+            <div class="text-[11px] text-slate-400 uppercase tracking-widest mt-1">Finishing Premium</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Glass Card (Desktop only) -->
+      <div class="hidden lg:block lg:col-span-5 relative">
+        <div class="glass-panel p-8 rounded-2xl border-slate-700/30 flex flex-col gap-6 animate-float-slow">
+          <h3 class="text-xl font-bold text-white">Konsultasikan Desain &amp; Sketsa 3D Secara Gratis</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Ingin membuat kitchen set, lemari custom, atau meja makan kayu solid? Hubungi artisan desainer kami hari ini.
+          </p>
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500">
+                ✓
+              </div>
+              <span class="text-xs text-slate-300">Survey &amp; Pengukuran Ruangan Gratis</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500">
+                ✓
+              </div>
+              <span class="text-xs text-slate-300">Rencana Anggaran Biaya Transparan</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500">
+                ✓
+              </div>
+              <span class="text-xs text-slate-300">Visualisasi Desain 3D Realistis</span>
+            </div>
+          </div>
+          <a href="https://wa.me/6281234567890" target="_blank" class="w-full py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-center rounded-xl transition-colors text-sm shadow-md">
+            Hubungi via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     STATS SHOWCASE SECTION
+     ========================================================================== -->
+  <section class="stats-section py-12 bg-slate-950/80 border-y border-slate-900">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-slate-800">
+        <div class="text-center pt-6 md:pt-0">
+          <div class="text-4xl md:text-5xl font-extrabold text-white stat-number" data-target="12" data-suffix="+">0</div>
+          <div class="text-xs text-slate-400 tracking-wider uppercase mt-2">Tahun Pengalaman</div>
+        </div>
+        <div class="text-center pt-6 md:pt-0">
+          <div class="text-4xl md:text-5xl font-extrabold text-white stat-number" data-target="1200" data-suffix="+">0</div>
+          <div class="text-xs text-slate-400 tracking-wider uppercase mt-2">Furniture Terkirim</div>
+        </div>
+        <div class="text-center pt-6 md:pt-0">
+          <div class="text-4xl md:text-5xl font-extrabold text-white stat-number" data-target="25" data-suffix="+">0</div>
+          <div class="text-xs text-slate-400 tracking-wider uppercase mt-2">Artisan Kayu Ahli</div>
+        </div>
+        <div class="text-center pt-6 md:pt-0">
+          <div class="text-4xl md:text-5xl font-extrabold text-white stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="text-xs text-slate-400 tracking-wider uppercase mt-2">Kepuasan Pelanggan</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     ABOUT US SECTION
+     ========================================================================== -->
+  <section id="tentang" class="py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
+      
+      <!-- Text Area -->
+      <div class="reveal reveal-slide-left flex flex-col gap-6">
+        <div class="text-sm font-bold text-amber-500 uppercase tracking-widest">Tentang Kami</div>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+          Menciptakan Karya Seni Furniture yang Fungsional &amp; Tahan Lama
+        </h2>
+        <p class="text-slate-300 leading-relaxed">
+          Gudang Mahakarnya didirikan dengan komitmen untuk menghadirkan furniture custom kualitas terbaik dengan sentuhan keindahan seni yang tinggi. Kami memadukan keahlian pertukangan kayu tradisional dengan teknologi woodworking modern untuk menghasilkan furniture presisi, kokoh, dan berestetika premium di setiap sudutnya.
+        </p>
+
+        <!-- Values Check list -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          <div class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500 font-bold text-sm">✓</div>
+            <span class="text-slate-200 text-sm font-semibold">Bahan Kayu Solid Pilihan</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500 font-bold text-sm">✓</div>
+            <span class="text-slate-200 text-sm font-semibold">Presisi &amp; Detail Sempurna</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500 font-bold text-sm">✓</div>
+            <span class="text-slate-200 text-sm font-semibold">Garansi Konstruksi Furniture</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500 font-bold text-sm">✓</div>
+            <span class="text-slate-200 text-sm font-semibold">Artisan Kayu Berpengalaman</span>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <a href="#alur-kerja" class="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300 transition-colors group">
+            Lihat Alur Kerja Pemesanan
+            <span class="group-hover:translate-x-1.5 transition-transform duration-300">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Overlapping Image Area -->
+      <div class="reveal reveal-slide-right relative">
+        <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+          <img src="assets/images/about_furniture.png" alt="Artisan woodworker detailing custom wooden furniture joint" class="w-full h-auto object-cover max-h-[420px] hover:scale-105 transition-transform duration-500">
+        </div>
+        <!-- Decorative element -->
+        <div class="absolute -top-6 -left-6 w-32 h-32 border-t-2 border-l-2 border-amber-500/50 rounded-tl-2xl pointer-events-none"></div>
+        <div class="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-amber-500/50 rounded-br-2xl pointer-events-none"></div>
+        
+        <!-- Floating Stats box -->
+        <div class="absolute bottom-6 left-6 z-20 glass-panel p-4 rounded-xl border-slate-700/40 flex items-center gap-4 shadow-xl">
+          <div class="w-12 h-12 rounded-lg bg-amber-500 flex items-center justify-center text-slate-950">
+            <!-- Carpenter/Ruler SVG -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div>
+            <div class="text-sm font-bold text-white">Premium Quality</div>
+            <div class="text-[10px] text-slate-400">Material &amp; Konstruksi Terbaik</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     SERVICES SECTION
+     ========================================================================== -->
+  <section id="layanan" class="py-24 bg-slate-950/50 relative">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 flex flex-col gap-4">
+        <span class="text-sm font-bold text-amber-500 uppercase tracking-widest">Layanan Kami</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white">Pembuatan Furniture Custom</h2>
+        <p class="text-slate-300">Kami melayani pembuatan berbagai furniture custom berkualitas untuk mempercantik hunian dan area bisnis Anda.</p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Service Card 1 -->
+        <div class="reveal reveal-slide-up bg-[#0f172a]/80 border border-slate-800/80 p-8 rounded-2xl flex flex-col gap-5 glow-card">
+          <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500">
+            <!-- Home Icon SVG -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-white">Residensial &amp; Rumah</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Pembuatan kitchen set, lemari pakaian (wardrobe), kabinet TV, meja rias, dan ranjang custom sesuai ukuran ruangan Anda.
+          </p>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="reveal reveal-slide-up bg-[#0f172a]/80 border border-slate-800/80 p-8 rounded-2xl flex flex-col gap-5 glow-card" style="transition-delay: 100ms;">
+          <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500">
+            <!-- Building Office SVG -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-white">Kantor &amp; Bisnis</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Menyediakan meja kerja, meja rapat besar, resepsionis, rak display, dan furniture komersial untuk kafe, restoran, atau hotel.
+          </p>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="reveal reveal-slide-up bg-[#0f172a]/80 border border-slate-800/80 p-8 rounded-2xl flex flex-col gap-5 glow-card" style="transition-delay: 200ms;">
+          <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500">
+            <!-- Table Icon SVG -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 14h16M6 14v6M18 14v6M12 8v6" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-white">Meja Kayu Solid</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Meja makan, konsol, dan bangku dari kayu utuh (slab) seperti Jati, Trembesi, dan Walnut dengan serat alami yang mewah.
+          </p>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="reveal reveal-slide-up bg-[#0f172a]/80 border border-slate-800/80 p-8 rounded-2xl flex flex-col gap-5 glow-card" style="transition-delay: 300ms;">
+          <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500">
+            <!-- Design blueprint drafting SVG -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-white">Desain &amp; Gambar 3D</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Perancangan desain 3D interaktif agar Anda dapat memvisualisasikan penempatan furniture di ruangan sebelum proses produksi.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Integrated CTA Block with image background -->
+      <div class="reveal reveal-slide-up mt-16 rounded-3xl overflow-hidden relative border border-slate-800">
+        <div class="absolute inset-0 z-0">
+          <img src="assets/images/service_detail.png" alt="Beautiful raw teak wood slab in woodworking workshop" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-[#0f172a]/90 backdrop-blur-sm"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-[#0b0f19] via-[#0f172a]/70 to-transparent"></div>
+        </div>
+        <div class="relative z-10 px-8 py-12 md:p-12 lg:p-16 max-w-2xl flex flex-col gap-5">
+          <div class="text-xs font-bold text-amber-500 tracking-widest uppercase">Kombinasi Material</div>
+          <h4 class="text-2xl md:text-3xl font-extrabold text-white">Punya Ide Desain Sendiri?</h4>
+          <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            Pengrajin kami siap mewujudkan desain impian Anda. Kami melayani pembuatan furniture dengan ukuran kustom, finishing khusus, hingga penggabungan material kayu dengan besi industrial, kuningan mewah, marmer alam, atau cat duco premium.
+          </p>
+          <div class="mt-4">
+            <a href="#kontak" class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-8 py-3.5 rounded-xl transition-all duration-300 shadow-lg shadow-amber-500/10">
+              Diskusikan Kebutuhan Anda
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     PORTFOLIO / FEATURED PROJECTS
+     ========================================================================== -->
+  <section id="portofolio" class="py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      
+      <!-- Header Area -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
+        <div class="flex flex-col gap-4 max-w-xl">
+          <span class="text-sm font-bold text-amber-500 uppercase tracking-widest">Galeri Mahakarya</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white">Produk Custom Terbaru</h2>
+          <p class="text-slate-300">Lihat hasil pengerjaan furniture custom terbaik yang telah memperindah dan memaksimalkan fungsi ruangan klien kami.</p>
+        </div>
+        
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap gap-2.5 self-start md:self-end bg-slate-950 p-1.5 rounded-xl border border-slate-900">
+          <button class="filter-btn px-5 py-2 rounded-lg text-xs font-bold tracking-wider uppercase border border-amber-500 bg-amber-500 text-slate-950 transition-all duration-300 cursor-pointer" data-filter="all">
+            Semua
+          </button>
+          <button class="filter-btn px-5 py-2 rounded-lg text-xs font-bold tracking-wider uppercase border border-slate-800 bg-slate-900 text-slate-300 hover:text-white transition-all duration-300 cursor-pointer" data-filter="residence">
+            Kitchen &amp; Wardrobe
+          </button>
+          <button class="filter-btn px-5 py-2 rounded-lg text-xs font-bold tracking-wider uppercase border border-slate-800 bg-slate-900 text-slate-300 hover:text-white transition-all duration-300 cursor-pointer" data-filter="commercial">
+            Ruang Makan
+          </button>
+          <button class="filter-btn px-5 py-2 rounded-lg text-xs font-bold tracking-wider uppercase border border-slate-800 bg-slate-900 text-slate-300 hover:text-white transition-all duration-300 cursor-pointer" data-filter="infra">
+            Kantor &amp; Bisnis
+          </button>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div id="portfolioGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Portfolio Item 1 -->
+        <div class="portfolio-item group overflow-hidden bg-[#0f172a] rounded-2xl border border-slate-800/80 flex flex-col transition-all duration-500 reveal reveal-slide-up" data-category="residence">
+          <div class="relative overflow-hidden aspect-[4/3]">
+            <img src="assets/images/project_bedroom.png" alt="Lemari dan Panel Dinding Master Bedroom" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <button class="view-detail-btn w-12 h-12 bg-amber-500 text-slate-950 rounded-full flex items-center justify-center font-bold text-lg hover:scale-110 transition-transform cursor-pointer shadow-lg" aria-label="Lihat Foto Detail">
+                🔍
+              </button>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col gap-2">
+            <span class="project-category text-xs font-semibold text-amber-500 uppercase tracking-widest">Kitchen &amp; Wardrobe (BSD, Tangerang)</span>
+            <h3 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Wardrobe Master Bedroom</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Kombinasi wardrobe kabinet kayu jati minimalis pintu kaca tempered dengan pencahayaan LED terintegrasi di dalamnya.
+            </p>
+          </div>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+        <div class="portfolio-item group overflow-hidden bg-[#0f172a] rounded-2xl border border-slate-800/80 flex flex-col transition-all duration-500 reveal reveal-slide-up" data-category="commercial" style="transition-delay: 100ms;">
+          <div class="relative overflow-hidden aspect-[4/3]">
+            <img src="assets/images/project_living.png" alt="Meja Makan Jati Solid Wood" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <button class="view-detail-btn w-12 h-12 bg-amber-500 text-slate-950 rounded-full flex items-center justify-center font-bold text-lg hover:scale-110 transition-transform cursor-pointer shadow-lg" aria-label="Lihat Foto Detail">
+                🔍
+              </button>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col gap-2">
+            <span class="project-category text-xs font-semibold text-amber-500 uppercase tracking-widest">Ruang Makan (Menteng, Jakarta)</span>
+            <h3 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Meja Makan Solid Walnut</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Meja makan keluarga besar dengan material kayu walnut utuh, kaki kokoh minimalis, dan finishing natural oil ramah lingkungan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="portfolio-item group overflow-hidden bg-[#0f172a] rounded-2xl border border-slate-800/80 flex flex-col transition-all duration-500 reveal reveal-slide-up" data-category="infra" style="transition-delay: 200ms;">
+          <div class="relative overflow-hidden aspect-[4/3]">
+            <img src="assets/images/project_office.png" alt="Meja Kerja Eksekutif Walnut" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <button class="view-detail-btn w-12 h-12 bg-amber-500 text-slate-950 rounded-full flex items-center justify-center font-bold text-lg hover:scale-110 transition-transform cursor-pointer shadow-lg" aria-label="Lihat Foto Detail">
+                🔍
+              </button>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col gap-2">
+            <span class="project-category text-xs font-semibold text-amber-500 uppercase tracking-widest">Kantor &amp; Bisnis (Sudirman, Jakarta)</span>
+            <h3 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Meja Kerja Eksekutif</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Meja kerja direksi mewah dengan material kayu solid premium dilengkapi penyimpanan rapi dan jalur manajemen kabel internal.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     TIMELINE / WORKFLOW SECTION
+     ========================================================================== -->
+  <section id="alur-kerja" class="py-24 bg-slate-950/40 relative timeline-section">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+      
+      <!-- Header Area -->
+      <div class="text-center max-w-2xl mx-auto mb-20 flex flex-col gap-4">
+        <span class="text-sm font-bold text-amber-500 uppercase tracking-widest">Alur Kerja Kami</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white">Proses Pemesanan &amp; Pembuatan</h2>
+        <p class="text-slate-300">Langkah terstruktur untuk memastikan furniture custom Anda selesai tepat waktu dengan kualitas terbaik.</p>
+      </div>
+
+      <!-- Timeline Structure -->
+      <div class="relative">
+        <!-- Center line (Desktop) / Left line (Mobile) -->
+        <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-[2px] bg-slate-800 -translate-x-1/2">
+          <!-- Animated Active Line Fill -->
+          <div class="timeline-progress-bar w-full bg-amber-500"></div>
+        </div>
+
+        <!-- Node 1 -->
+        <div class="timeline-node relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-16 select-none">
+          <!-- Dot Indicator -->
+          <div class="absolute left-6 md:left-1/2 top-4 w-10 h-10 rounded-full bg-slate-900 border-2 border-slate-800 flex items-center justify-center -translate-x-1/2 z-10 transition-all duration-500">
+            <span class="node-badge text-xs font-bold text-slate-400">01</span>
+          </div>
+          
+          <!-- Content Left (Desktop) -->
+          <div class="pl-16 md:pl-0 md:text-right reveal reveal-slide-left flex flex-col gap-3">
+            <h3 class="text-xl font-bold text-white">Konsultasi &amp; Survey Ruangan</h3>
+            <p class="text-slate-400 text-sm leading-relaxed max-w-md md:ml-auto">
+              Diskusi mengenai konsep, fungsi, survey lokasi langsung, serta pengukuran ruang secara presisi dan gratis.
+            </p>
+          </div>
+          <!-- Spacer (Desktop) -->
+          <div class="hidden md:block"></div>
+        </div>
+
+        <!-- Node 2 -->
+        <div class="timeline-node relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-16 select-none">
+          <!-- Dot Indicator -->
+          <div class="absolute left-6 md:left-1/2 top-4 w-10 h-10 rounded-full bg-slate-900 border-2 border-slate-800 flex items-center justify-center -translate-x-1/2 z-10 transition-all duration-500">
+            <span class="node-badge text-xs font-bold text-slate-400">02</span>
+          </div>
+          
+          <!-- Spacer (Desktop) -->
+          <div class="hidden md:block"></div>
+          
+          <!-- Content Right -->
+          <div class="pl-16 md:pl-0 reveal reveal-slide-right flex flex-col gap-3">
+            <h3 class="text-xl font-bold text-white">Desain 3D &amp; Rincian Anggaran</h3>
+            <p class="text-slate-400 text-sm leading-relaxed max-w-md">
+              Pembuatan visualisasi 3D furniture di ruangan Anda dan penawaran harga transparan sesuai material pilihan Anda.
+            </p>
+          </div>
+        </div>
+
+        <!-- Node 3 -->
+        <div class="timeline-node relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-16 select-none">
+          <!-- Dot Indicator -->
+          <div class="absolute left-6 md:left-1/2 top-4 w-10 h-10 rounded-full bg-slate-900 border-2 border-slate-800 flex items-center justify-center -translate-x-1/2 z-10 transition-all duration-500">
+            <span class="node-badge text-xs font-bold text-slate-400">03</span>
+          </div>
+          
+          <!-- Content Left (Desktop) -->
+          <div class="pl-16 md:pl-0 md:text-right reveal reveal-slide-left flex flex-col gap-3">
+            <h3 class="text-xl font-bold text-white">Produksi Presisi di Workshop</h3>
+            <p class="text-slate-400 text-sm leading-relaxed max-w-md md:ml-auto">
+              Proses pengerjaan konstruksi, perakitan sambungan kayu, dan finishing halus oleh pengrajin ahli kami di workshop.
+            </p>
+          </div>
+          <!-- Spacer (Desktop) -->
+          <div class="hidden md:block"></div>
+        </div>
+
+        <!-- Node 4 -->
+        <div class="timeline-node relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 select-none">
+          <!-- Dot Indicator -->
+          <div class="absolute left-6 md:left-1/2 top-4 w-10 h-10 rounded-full bg-slate-900 border-2 border-slate-800 flex items-center justify-center -translate-x-1/2 z-10 transition-all duration-500">
+            <span class="node-badge text-xs font-bold text-slate-400">04</span>
+          </div>
+          
+          <!-- Spacer (Desktop) -->
+          <div class="hidden md:block"></div>
+          
+          <!-- Content Right -->
+          <div class="pl-16 md:pl-0 reveal reveal-slide-right flex flex-col gap-3">
+            <h3 class="text-xl font-bold text-white">Pengiriman &amp; Instalasi Rapi</h3>
+            <p class="text-slate-400 text-sm leading-relaxed max-w-md">
+              Pemasangan furniture secara presisi dan rapi di ruangan Anda oleh tim instalasi berpengalaman, diikuti masa retensi garansi.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     TESTIMONIALS SECTION
+     ========================================================================== -->
+  <section class="py-24 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+      
+      <!-- Header Area -->
+      <div class="text-center max-w-2xl mx-auto mb-16 flex flex-col gap-4">
+        <span class="text-sm font-bold text-amber-500 uppercase tracking-widest">Kepuasan Pelanggan</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white">Apa Kata Mereka?</h2>
+        <p class="text-slate-300">Ulasan jujur dari pelanggan yang telah mempercayakan keindahan interior mereka kepada Gudang Mahakarnya.</p>
+      </div>
+
+      <!-- Testimonial Slider Wrap -->
+      <div class="relative max-w-3xl mx-auto reveal reveal-fade">
+        <div class="overflow-hidden rounded-2xl bg-[#0f172a]/70 border border-slate-800/80 p-8 md:p-12 shadow-2xl relative">
+          <!-- Quote Icon Deco -->
+          <div class="absolute top-6 right-8 text-slate-800/20 font-serif text-[180px] leading-none select-none pointer-events-none">”</div>
+          
+          <!-- Slider Track -->
+          <div class="flex testimonial-track w-full">
+            
+            <!-- Slide 1 -->
+            <div class="w-full flex-shrink-0 testimonial-slide flex flex-col gap-6 relative z-10">
+              <!-- Stars -->
+              <div class="flex gap-1 text-amber-500">★★★★★</div>
+              <p class="text-slate-200 text-base md:text-lg italic leading-relaxed">
+                "Sangat puas dengan kitchen set dan wardrobe dari Gudang Mahakarnya. Hasil kerjanya sangat presisi, finishing duco-nya halus sekali, dan pemasangannya rapi tanpa merusak dinding. Sangat direkomendasikan!"
+              </p>
+              <div class="flex items-center gap-4 mt-2">
+                <div class="w-12 h-12 rounded-full bg-amber-500/10 flex items-center justify-center font-bold text-amber-500 text-lg border border-amber-500/30">
+                  BS
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-white">Budi Santoso</div>
+                  <div class="text-xs text-slate-400">Pemilik Rumah Tinggal, BSD</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="w-full flex-shrink-0 testimonial-slide flex flex-col gap-6 relative z-10">
+              <!-- Stars -->
+              <div class="flex gap-1 text-amber-500">★★★★★</div>
+              <p class="text-slate-200 text-base md:text-lg italic leading-relaxed">
+                "Meja rapat jati solid wood yang kami pesan untuk kantor benar-benar menjadi pusat perhatian. Serat kayunya indah sekali dan konstruksinya sangat kokoh. Proses pengerjaan juga tepat waktu."
+              </p>
+              <div class="flex items-center gap-4 mt-2">
+                <div class="w-12 h-12 rounded-full bg-amber-500/10 flex items-center justify-center font-bold text-amber-500 text-lg border border-amber-500/30">
+                  RW
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-white">Rina Wijaya</div>
+                  <div class="text-xs text-slate-400">Office Manager, Sudirman</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="w-full flex-shrink-0 testimonial-slide flex flex-col gap-6 relative z-10">
+              <!-- Stars -->
+              <div class="flex gap-1 text-amber-500">★★★★★</div>
+              <p class="text-slate-200 text-base md:text-lg italic leading-relaxed">
+                "Gudang Mahakarnya membantu kami mendesain dan memproduksi furniture kafe kami. Konsep industrial kayu-besi yang mereka buat sangat estetik dan disukai oleh pengunjung kafe kami!"
+              </p>
+              <div class="flex items-center gap-4 mt-2">
+                <div class="w-12 h-12 rounded-full bg-amber-500/10 flex items-center justify-center font-bold text-amber-500 text-lg border border-amber-500/30">
+                  AF
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-white">H. Ahmad Fauzi</div>
+                  <div class="text-xs text-slate-400">Pemilik Kafe &amp; Resto, Bandung</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="flex justify-between items-center mt-8 max-w-xs mx-auto">
+          <button id="prevTestimonial" class="w-10 h-10 rounded-full border border-slate-800 bg-slate-950 text-white flex items-center justify-center hover:bg-slate-900 hover:border-slate-500 transition-colors cursor-pointer" aria-label="Slide sebelumnya">
+            ←
+          </button>
+          
+          <!-- Dots indicators -->
+          <div id="sliderDots" class="flex gap-2.5"></div>
+          
+          <button id="nextTestimonial" class="w-10 h-10 rounded-full border border-slate-800 bg-slate-950 text-white flex items-center justify-center hover:bg-slate-900 hover:border-slate-500 transition-colors cursor-pointer" aria-label="Slide berikutnya">
+            →
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     FAQ SECTION (Accordion)
+     ========================================================================== -->
+  <section id="faq" class="py-24 bg-slate-950/20">
+    <div class="max-w-3xl mx-auto px-6">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-16 flex flex-col gap-4">
+        <span class="text-sm font-bold text-amber-500 uppercase tracking-widest">Tanya Jawab</span>
+        <h2 class="text-3xl font-extrabold text-white">Pertanyaan Populer</h2>
+        <p class="text-slate-300">Berikut jawaban dari beberapa pertanyaan penting terkait pembuatan furniture di workshop kami.</p>
+      </div>
+
+      <!-- Accordion Grid -->
+      <div class="flex flex-col gap-4">
+        
+        <!-- Accordion Item 1 -->
+        <div class="faq-item bg-[#0f172a]/60 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left text-white font-bold cursor-pointer hover:bg-[#0f172a]/95">
+            <span>Apakah melayani survey lokasi dan desain 3D gratis?</span>
+            <span class="faq-icon text-amber-500 transition-transform duration-300 text-lg">↓</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/40 pt-4">
+            Ya. Kami menyediakan layanan survey ruangan, pengukuran di lokasi langsung, serta draf sketsa desain 3D awal secara gratis tanpa biaya bagi calon pelanggan kami.
+          </div>
+        </div>
+
+        <!-- Accordion Item 2 -->
+        <div class="faq-item bg-[#0f172a]/60 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left text-white font-bold cursor-pointer hover:bg-[#0f172a]/95">
+            <span>Bagaimana tahapan pembayaran pesanan furniture custom?</span>
+            <span class="faq-icon text-amber-500 transition-transform duration-300 text-lg">↓</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/40 pt-4">
+            Pembayaran terbagi menjadi dua tahap: Down Payment (DP) sebesar 50% setelah persetujuan desain dan RAB untuk mulai produksi di workshop kami, serta pelunasan 50% setelah proses instalasi selesai di lokasi Anda.
+          </div>
+        </div>
+
+        <!-- Accordion Item 3 -->
+        <div class="faq-item bg-[#0f172a]/60 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left text-white font-bold cursor-pointer hover:bg-[#0f172a]/95">
+            <span>Berapa lama garansi furniture yang diberikan?</span>
+            <span class="faq-icon text-amber-500 transition-transform duration-300 text-lg">↓</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/40 pt-4">
+            Kami memberikan garansi konstruksi furniture selama 1 tahun untuk pemakaian wajar. Garansi ini mencakup sambungan kayu yang renggang, engsel atau rel laci yang rusak, serta deformasi struktur kayu yang disebabkan oleh cacat produksi.
+          </div>
+        </div>
+
+        <!-- Accordion Item 4 -->
+        <div class="faq-item bg-[#0f172a]/60 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+          <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left text-white font-bold cursor-pointer hover:bg-[#0f172a]/95">
+            <span>Bahan material dan finishing apa saja yang digunakan?</span>
+            <span class="faq-icon text-amber-500 transition-transform duration-300 text-lg">↓</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/40 pt-4">
+            Kami menggunakan kayu solid premium (Jati, Walnut, Mahoni, Trembesi) and multipleks berkualitas tinggi (bukan MDF/serbuk kayu). Untuk finishing, kami menyediakan cat duco mewah, HPL premium, melamic, serta natural wood oil ramah lingkungan.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     CONTACT & DETAILED QUOTE FORM
+     ========================================================================== -->
+  <section id="kontak" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-12 gap-16 items-start">
+      
+      <!-- Contact Info Section -->
+      <div class="lg:col-span-5 flex flex-col gap-8 reveal reveal-slide-left">
+        <div class="flex flex-col gap-4">
+          <span class="text-sm font-bold text-amber-500 uppercase tracking-widest">Kontak Kami</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white">Hubungi Desainer &amp; Workshop Kami</h2>
+          <p class="text-slate-300 leading-relaxed text-sm">
+            Diskusikan rencana pembuatan furniture custom Anda sekarang. Silakan datang ke workshop kami atau kirim pesan formulir untuk berkonsultasi dengan tim desainer kami.
+          </p>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="flex flex-col gap-4">
+          <!-- Card 1 -->
+          <div class="flex gap-4 p-5 rounded-xl bg-slate-950/60 border border-slate-900">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-500 font-bold shrink-0">
+              📍
+            </div>
+            <div>
+              <div class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Workshop &amp; Showroom</div>
+              <div class="text-sm text-white font-bold mt-1">Kawasan Industri Sentul</div>
+              <div class="text-xs text-slate-300 mt-1">Jl. Sentul Raya No. 45, Babakan Madang, Kabupaten Bogor, Jawa Barat</div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flex gap-4 p-5 rounded-xl bg-slate-950/60 border border-slate-900">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-500 font-bold shrink-0">
+              📞
+            </div>
+            <div>
+              <div class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Telepon &amp; WhatsApp</div>
+              <div class="text-sm text-white font-bold mt-1">+62 21-8796-1234</div>
+              <div class="text-xs text-amber-500 font-semibold mt-1">WhatsApp: +62 812-3456-7890</div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flex gap-4 p-5 rounded-xl bg-slate-950/60 border border-slate-900">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-500 font-bold shrink-0">
+              ✉️
+            </div>
+            <div>
+              <div class="text-xs text-slate-400 font-semibold uppercase tracking-wider">E-mail Resmi</div>
+              <div class="text-sm text-white font-bold mt-1">hello@gudangmahakarnya.com</div>
+              <div class="text-xs text-slate-300 mt-1">custom@gudangmahakarnya.com</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Placeholder Mockup (Visual Polish) -->
+        <div class="rounded-2xl overflow-hidden border border-slate-800 h-48 relative shadow-inner">
+          <div class="absolute inset-0 bg-[#0f172a] bg-grid-pattern opacity-40"></div>
+          <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center gap-3">
+            <div class="text-amber-500 text-2xl font-bold">PETA LOKASI WORKSHOP</div>
+            <p class="text-slate-400 text-[11px] leading-relaxed max-w-xs">Sentul Industrial Area, Blok B3, Bogor</p>
+            <a href="https://maps.google.com" target="_blank" class="px-4 py-1.5 bg-slate-900 border border-slate-800 text-[11px] font-bold text-white rounded hover:bg-slate-800">Buka di Google Maps</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quote Form Block -->
+      <div class="lg:col-span-7 bg-[#0f172a]/70 border border-slate-800/80 p-8 md:p-10 rounded-3xl shadow-2xl reveal reveal-slide-right relative">
+        <h3 class="text-2xl font-extrabold text-white mb-2">Formulir Konsultasi Furniture</h3>
+        <p class="text-slate-400 text-sm mb-8">Lengkapi informasi di bawah ini. Desainer kami akan menghubungi Anda dalam waktu 1x24 jam.</p>
+        
+        <form id="contactForm" class="flex flex-col gap-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex flex-col gap-2">
+              <label for="name" class="text-xs font-bold text-slate-400 uppercase tracking-widest">Nama Lengkap</label>
+              <input type="text" id="name" required class="bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors placeholder-slate-600" placeholder="Contoh: Budi Santoso">
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="phone" class="text-xs font-bold text-slate-400 uppercase tracking-widest">Nomor WhatsApp</label>
+              <input type="tel" id="phone" required class="bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors placeholder-slate-600" placeholder="Contoh: 08123456789">
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex flex-col gap-2">
+              <label for="projectType" class="text-xs font-bold text-slate-400 uppercase tracking-widest">Jenis Furniture</label>
+              <select id="projectType" required class="bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-300 text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                <option value="" disabled selected>Pilih jenis furniture</option>
+                <option value="kitchen">Kitchen Set &amp; Wardrobe</option>
+                <option value="dining">Meja &amp; Kursi Makan</option>
+                <option value="office">Furniture Kantor &amp; Bisnis</option>
+                <option value="interior">Kustom Seluruh Ruangan (Full Interior)</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="budget" class="text-xs font-bold text-slate-400 uppercase tracking-widest">Estimasi Anggaran</label>
+              <select id="budget" required class="bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-300 text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                <option value="" disabled selected>Pilih rentang anggaran</option>
+                <option value="under10m">&lt; Rp 10 Juta</option>
+                <option value="10m-30m">Rp 10 Juta - Rp 30 Juta</option>
+                <option value="30m-100m">Rp 30 Juta - Rp 100 Juta</option>
+                <option value="above100m">&gt; Rp 100 Juta</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="message" class="text-xs font-bold text-slate-400 uppercase tracking-widest">Detail Kustom / Ukuran Perkiraan</label>
+            <textarea id="message" rows="5" required class="bg-slate-950/80 border border-slate-800 rounded-xl p-4 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors placeholder-slate-600 resize-none" placeholder="Tuliskan detail furniture yang diinginkan: jenis material, ukuran perkiraan, lokasi pengiriman..."></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-4 px-6 rounded-xl transition-all duration-300 mt-2 shadow-lg shadow-amber-500/10 hover:shadow-amber-500/20 text-sm flex items-center justify-center gap-2 cursor-pointer">
+            Kirim Pengajuan Furniture
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+  <footer class="bg-slate-950 border-t border-slate-900 pt-20 pb-12 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-12 gap-12 mb-16">
+      
+      <!-- Company Overview (5 cols) -->
+      <div class="md:col-span-5 flex flex-col gap-5">
+        <a href="#beranda" class="flex items-center gap-3 self-start">
+          <div class="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center shadow-lg shadow-amber-500/20">
+            <!-- Modern Furniture Icon (SVG) -->
+            <svg class="w-6 h-6 text-slate-950" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 9h16v6H4V9z M8 15v4 M16 15v4 M6 9V6a1 1 0 011-1h10a1 1 0 011 1v3" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl font-bold tracking-tight text-white">GUDANG</span>
+            <span class="text-[9px] text-amber-500 tracking-[0.2em] font-semibold leading-none">MAHAKARNYA</span>
+          </div>
+        </a>
+        <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+          Gudang Mahakarnya adalah workshop pembuat furniture custom premium yang mendedikasikan diri untuk mewujudkan mahakarya fungsional di setiap hunian Anda dengan material terbaik.
+        </p>
+        <!-- Social Icons Mockup -->
+        <div class="flex gap-4 mt-2">
+          <a href="#" class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 text-slate-400 flex items-center justify-center hover:text-white hover:border-slate-500 transition-all text-xs" aria-label="Instagram">IG</a>
+          <a href="#" class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 text-slate-400 flex items-center justify-center hover:text-white hover:border-slate-500 transition-all text-xs" aria-label="Facebook">FB</a>
+          <a href="#" class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 text-slate-400 flex items-center justify-center hover:text-white hover:border-slate-500 transition-all text-xs" aria-label="LinkedIn">LI</a>
+          <a href="#" class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 text-slate-400 flex items-center justify-center hover:text-white hover:border-slate-500 transition-all text-xs" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+
+      <!-- Quick Directory Links (3 cols) -->
+      <div class="md:col-span-3 flex flex-col gap-5">
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Navigasi Link</h4>
+        <ul class="flex flex-col gap-3 text-sm text-slate-400">
+          <li><a href="#beranda" class="hover:text-amber-500 transition-colors">Beranda Utama</a></li>
+          <li><a href="#tentang" class="hover:text-amber-500 transition-colors">Tentang Kami</a></li>
+          <li><a href="#layanan" class="hover:text-amber-500 transition-colors">Layanan Furniture</a></li>
+          <li><a href="#portofolio" class="hover:text-amber-500 transition-colors">Galeri Mahakarya</a></li>
+          <li><a href="#alur-kerja" class="hover:text-amber-500 transition-colors">Alur Kerja Pemesanan</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter Box (4 cols) -->
+      <div class="md:col-span-4 flex flex-col gap-5">
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Hubungi Langsung</h4>
+        <p class="text-slate-400 text-sm leading-relaxed">Dapatkan informasi penawaran produk terbaru dan artikel inspirasi interior dari kami.</p>
+        <div class="flex gap-2">
+          <input type="email" placeholder="Alamat Email Anda" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-amber-500 transition-all">
+          <button class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-4 py-2.5 rounded-xl transition-all text-xs flex items-center justify-center cursor-pointer shadow-md">Daftar</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright Area -->
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 border-t border-slate-900/60 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+      <p>&copy; 2026 Gudang Mahakarnya. Hak Cipta Dilindungi Undang-Undang.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-slate-300">Kebijakan Privasi</a>
+        <a href="#" class="hover:text-slate-300">Syarat &amp; Ketentuan</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+     INTERACTIVE PORTFOLIO LIGHTBOX MODAL
+     ========================================================================== -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-md hidden pointer-events-none opacity-0 flex flex-col items-center justify-center p-6">
+    <!-- Close Button -->
+    <button id="lightboxClose" class="absolute top-6 right-6 md:right-12 md:top-12 text-slate-400 hover:text-white text-3xl font-extralight focus:outline-none cursor-pointer" aria-label="Tutup Detail View">
+      &times;
+    </button>
+    
+    <!-- Lightbox Main Card -->
+    <div class="max-w-4xl w-full flex flex-col gap-4 relative">
+      <div class="rounded-2xl overflow-hidden border border-slate-800 bg-[#0f172a] shadow-2xl aspect-[4/3] max-h-[75vh]">
+        <img id="lightboxImg" src="" alt="" class="w-full h-full object-cover">
+      </div>
+      <div class="flex flex-col gap-1 text-center md:text-left">
+        <h4 id="lightboxTitle" class="text-xl font-bold text-white">Nama Proyek</h4>
+        <p id="lightboxDesc" class="text-xs text-amber-500 uppercase tracking-widest font-semibold">Kategori Proyek</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+     SCROLL TO TOP BUTTON
+     ========================================================================== -->
+  <a id="scrollTopBtn" href="#beranda" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 w-12 h-12 bg-amber-500 text-slate-950 rounded-full flex items-center justify-center font-bold text-lg hover:bg-amber-400 hover:scale-110 shadow-lg shadow-amber-500/10 opacity-0 translate-y-4 transition-all duration-300 z-30" aria-label="Kembali ke atas">
+    ↑
+  </a>
+
+  <!-- Main JS Execution -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
